@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>customer record</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <div
+      class="container-fluid bg-black border-b border-gray-700 drop-shadow-2xl"
+    >
+      <div class="container bg-black flex items-center p-3 mx-auto">
+        <img
+          src="/images/Superior-Auto-Image-logo-new@2x.png"
+          class="h-5 mt-4 mb-4"
+          alt=""
+        />
+        <div class="flex ml-auto space-x-10">
+          <a href="/index.html">
+            <img
+              src="/images-s/dashboard-bar-1/Path 34-white.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/calender.html">
+            <img
+              src="/images/Path 33.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/parts.html">
+            <img
+              src="/images/Path 36.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/reports.html">
+            <img
+              src="/images/Path 35.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- buttons -->
+<!--         
+        <div class="flex  items-center space-x-4"> -->
+
+         <!-- Modal toggle 1 -->
+         
+<!-- Modal toggle -->
+<button data-modal-target="defaultModal" data-modal-toggle="defaultModal"  class="block  text-white ml-6 bg-transparent border border-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center" type="button
+" >
+  <div class="flex item-center  justify-center space-x-2 ">
+    <img src="/images/Path 37.png" class="w-fit h-fit"  alt="" />
+     <div  class="pt-1">Send Estimator</div>
+      </div>
+  
+</button>
+
+          <!-- Modal toggle 2 -->
+          <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"  class="block  text-white ml-6 bg-transparent border border-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center" type="button
+          " >
+            <div class="flex item-center  justify-center space-x-2 ">
+              <img src="/images/Path 4.png" class="w-fit h-fit"  alt="" />
+               <div>Send Estimator</div>
+                </div>
+            
+          </button>
+        <!-- button end -->
+
+        <div class="flex ml-10 space-x-10">
+          <a href="/timeline.html">
+            <img src="/images/Path 6.png" alt="" />
+          </a>
+          <a href="/customer-record.html">
+            <img src="/images/Path 2.png" alt="" />
+          </a>
+          <a href="/setting.html">
+            <img src="/images/Path 3.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+      <!-- tag -->
+      <div class="container-fluid w-full mx-auto p-box-blk">
+        <div class="container w-full mx-auto py-5">
+            <!-- div1 -->
+            <div class="flex  items-center space-x-3 mx-auto" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-receipt" viewBox="0 0 16 16"> 
+                    <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/> <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/> 
+                </svg>  
+                <label for="svg" class="text-white text-4xl font-bold">David Luis Hernandez</label>  
+            </div>
+            <!-- div2 -->
+            <div class="flex justify-between items-center ">
+                <div class="pt-2 pl-10"><h1 class="text-white text-xl">
+                  2016 Honda Element <br>
+                    RO # SF-3294112
+                </h1></div>
+                    <div class="flex mt-4 items-center space-x-4 ">
+                      <div class="flex items-center space-x-2"> 
+                        <svg class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="white">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                          <h1 class="text-white font-bold text-2xl" >View Timeline</h1>
+                        </svg>
+                      </div>
+
+                     <div class="flex items-center space-x-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      <h1 class="text-white font-bold text-2xl">Search Record</h1>
+                      </svg>
+                     </div>
+                       
+                    </div>
+            </div>
+        </div>
+      </div>
+
+      
+          <!-- grid  -->
+          <div class="container-fluid p-box-bg mx-auto ">
+          <div class="container  py-4 p-box-bg mx-auto">
+    
+            <div class="grid grid-rows-2 grid-cols-2 ">
+                <!-- 111111111111111111111111111111111111111
+                  1111111111111111 -->
+                 <div class="w-fit">
+                  <a href="#" class="text-white text-3xl">Customer</a>
+                   <!-- bar1 -->
+                   <div class="flex items-center space-x-8">
+                    <div> <p class="text-white py-1">Business name</p> <input type="text" placeholder="Superior Auto Image" class="w-80 bg-transparent rounded-lg border text-white "> </div>
+                    <div> <p class="text-white py-1">Website</p> <input type="text" placeholder="superiorauto.com" class="w-80 bg-transparent rounded-lg border text-white "> </div>
+                </div>
+                <!-- bar2 -->
+                <div class="flex items-center space-x-8">
+                    <div> <p class="text-white py-1">Shop ID</p> <input type="text" placeholder="Hkge1294712BXas0283" class=" w-80 bg-transparent rounded-lg border text-white "> </div>
+                    <div> <p class="text-white py-1">Phone</p> <input type="text" placeholder="212-555-1234" class="w-80  bg-transparent rounded-lg border text-white "> </div>
+                </div>
+                <!-- bar3 -->
+                <div class="flex items-center space-x-8 ">
+                    <div> <p class="text-white py-1">Address 1</p> <input type="text" placeholder="6754 Colonial Oaks Lane" class="w-80  bg-transparent rounded-lg border text-white "> </div>
+                    <div> <p class="text-white py-1">Address 2</p> <input type="text" placeholder="" class="w-80  bg-transparent rounded-lg border text-white "> </div>
+                </div>
+                <!-- bar4 -->
+                <div class="flex items-center space-x-8 ">
+                    <div> <p class="text-white py-1">City</p> <input type="text" placeholder="Houston" class="w-80  bg-transparent rounded-lg border text-white "> </div>
+                    <div> <p class="text-white py-1">State</p> <input type="text" placeholder="TX" class="w-36 h-12 bg-transparent rounded-lg border text-white "> </div>
+                    <div> <p class="text-white py-1">Zip</p> <input type="text" placeholder="90368" class="w-36 h-12 bg-transparent rounded-lg border text-white "> </div>
+                </div>
+                <div class="border-b-2 border-gray-300 pt-8 w-full"></div>
+              </div> 
+                    <!-- 2start -->
+             <div class="px-20 w-fit pt-3">
+              <a href="#" class="text-white font-bold text-xl">Lead Info</a>
+              <div href="#" class="text-gray-300 pt-2 ">Source</div>
+              <div class="flex space-x-8">
+                <!-- CHECK1 -->
+              <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Walk in</h2>
+              </div>
+               <!-- CHECK2 -->
+               <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Call in</h2>
+              </div>
+               <!-- CHECK3 -->
+               <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Tow in</h2>
+              </div>
+               <!-- CHECK4 -->
+               <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Another shop</h2>
+              </div>
+              <!-- end -->
+              </div>
+              <div class="flex flex-col text-start">
+                <div href="#" class="text-gray-300 pt-3 ">Notes</div>
+                <div>
+                  <input type="text" class="px-48 h-48 rounded-lg bg-transparent">
+                </div>
+              </div>
+              <div class="border-b-2 border-gray-300 pt-8 w-full"></div>
+             </div>
+
+             <!-- 3start -->
+          <div class="pt-8 w-fit space-y-4">
+            
+            <!-- bar1 -->
+            <div class="flex space-x-8 ">
+              <div> <p class="text-white py-1">Year</p> <input type="text" placeholder="2006" class="bg-transparent rounded-lg border text-white "> </div>
+              <div> <p class="text-white py-1">Make</p> <input type="text" placeholder="Honde" class=" bg-transparent rounded-lg border text-white "> </div>
+              <div> <p class="text-white py-1">Model</p> <input type="text" placeholder="Element" class="bg-transparent rounded-lg border text-white "> </div>
+          </div>
+          <!-- bar1 -->
+          <div class="flex items-center space-x-8  ">
+            <div> <p class="text-white py-1">VIN #</p> <input type="text" placeholder="1HGBH41JXMN109186" class="px-[250px] bg-transparent rounded-lg border text-white "> </div>  
+
+          </div>
+          <div class="border-b-2 border-gray-300 pt-4 w-full"></div>
+          <!-- bar1 -->
+          <div class="text-white text-xl font-bold">Insurance</div>
+          <div class="flex space-x-8 ">
+            <div> <p class="text-white py-1">Insurance Company</p> <input type="text" placeholder="Safeco" class="bg-transparent rounded-lg border text-white "> </div>
+            <div> <p class="text-white py-1">Claim #</p> <input type="text" placeholder="KL-987-126" class=" bg-transparent rounded-lg border text-white "> </div>
+            <div> <p class="text-white py-1">Rental Car Days</p> <input type="text" placeholder="8" class="bg-transparent rounded-lg border text-white "> </div>
+        </div>
+          </div>
+
+          <!-- 4part -->
+            <div class="px-20 w-fit">
+              <div  class="text-white font-bold text-xl pt-2 ">Estimator</div>
+              <div  class="text-gray-300 pt-2 ">
+                <div class="text-gray-300">Estimator Name</div>
+                <div>
+                   <!-- bar1 -->
+                   <div class="flex items-center space-x-6">
+                    <div> <input type="text" placeholder="Superior Auto Image" class=" bg-transparent rounded-lg border text-white "> </div>
+                      <!-- CHECK1 -->
+              <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center justify-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Authorized</h2>
+              </div>
+              <!-- CHECK2 -->
+              <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center justify-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Estimate</h2>
+              </div>
+              <!-- CHECK3 -->
+              <div class="flex mt-2 ">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center justify-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-2 flex items-center text-white ">Invoice</h2>
+              </div>
+              
+                </div>
+                <div class="flex flex-col text-start">
+                  <div href="#" class="text-gray-300 pt-3 ">Notes</div>
+                  <div>
+                    <input type="text" class="px-48 h-32 rounded-lg bg-transparent">
+                  </div>
+                </div>
+                <!--  -->
+                <div class="flex flex-col text-start">
+                  <div href="#" class="text-gray-300 pt-3 ">Documents</div>
+                  <div class="flex">
+                    <input type="text" class="px-28 h-[52px] rounded-lg bg-transparent">
+                    <button class="p-box-blue rounded-lg ml-2 px-6">
+                      <a href="#">Add Document</a>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              
+          </div>
+              
+
+
+              </div>
+  
+              </div>
+              <!-- border -->
+              <div class="container border-b-2 mx-auto  mt-8 border-gray-400 mb-2"></div>
+
+              <div tabindex="0" class="collapse collapse-arrow">
+                <input type="checkbox" /> 
+                <div class="collapse-title text-xl font-medium text-white">
+                   Supporting Documents 
+                </div>
+                <div class="collapse-content"> 
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  <!-- r0w1 -->
+                  <div class="text-white">
+                    <div>Photos</div>
+                    <div>08/12/2000</div>
+                    <div class="grid grid-rows-1 grid-cols-6 text-white space-x-4">
+                      
+                      <div><button class="bg-black px-24 py-12  mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>                        
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      <div><button class="bg-black px-24 py-16 mt-2">
+                                                
+                      </button></div>
+                      
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- border -->
+              <div class="container border-b-2 mx-auto mt-8  border-gray-400 mb-2"></div>
+
+              <!-- parts -->
+              <div tabindex="0" class="container mx-auto collapse collapse-arrow">
+                <input type="checkbox" /> 
+                <div class="collapse-title text-xl font-medium text-white">
+                   parts 
+                </div>
+                <div class="collapse-content"> 
+                  <!--  -->
+                  <!-- parts -->
+        
+      <!-- name -->
+      <div class="container-fluid w-full mx-auto p-box-bg ">
+          </div>
+          <!-- headings -->
+          <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2 ">
+                <div class="grid grid-row-1 grid-cols-8  ">
+                  <div class="text-gray-400">Status</div>
+                  <div class="text-gray-400">Part Name</div>
+                  <div class="text-gray-400">Qty</div>
+                  <div class="text-gray-400">OEM Part #</div>
+                  <div class="text-gray-400">Description</div>
+                  <div class="text-gray-400">Mfr</div>
+                  <div class="text-gray-400">RO #</div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-golden py-2 w-fit px-4 text-gray-700 rounded-lg">
+                      <a href="#">Back Ordered</a>
+                  </button>
+                  <div class="text-white font-bold">Bumper bracket</div>
+                  <div class="text-gray-400">1</div>
+                  <div class="text-gray-400">A-123-456-789</div>
+                  <div class="text-gray-400">Velit, delet sed quia nonoum…</div>
+                  <div class="text-gray-400">Honda</div>
+                  <div class="text-gray-400">1JBZ12234</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-sabaz py-2 w-fit px-7 text-white  rounded-lg">
+                      <a href="#">Purchased</a>
+                  </button>
+                  <div class="text-white font-bold">Spark plug</div>
+                  <div class="text-gray-400">4</div>
+                  <div class="text-gray-400">ZD4501-H25</div>
+                  <div class="text-gray-400">Neque porro quisquam est…</div>
+                  <div class="text-gray-400">AC Delco</div>
+                  <div class="text-gray-400">F-56</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                </div>
+                </div>
+                <!-- div2 -->
+                <div class="flex  justify-center space-x-4 p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                    <p class="text-gray-400">Repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis volupta epi. <br>
+                       Neque porro quisquam est, ipsum quia dolor sit amet,consectetur, adipisci velit, sed quia non numquam eius modi tempor est,omnis <br>
+                       dolor repellendus.</p>
+                </div>
+                <!-- borders -->
+              </div>
+              <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+            </div>
+            
+            <!-- 3 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-sabaz py-2 w-fit px-7 text-white rounded-lg">
+                      <a href="#">Purchased</a>
+                  </button>
+                  <div class="text-white font-bold">Alternator</div>
+                  <div class="text-gray-400">1</div>
+                  <div class="text-gray-400">A-123-456-789</div>
+                  <div class="text-gray-400">Sed quia non num</div>
+                  <div class="text-gray-400">DB Electrical </div>
+                  <div class="text-gray-400">1JBZ12234</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-sabaz py-2 w-fit px-7 text-white rounded-lg">
+                      <a href="#">Purchased</a>
+                  </button>
+                  <div class="text-white font-bold">Airbag sensor</div>
+                  <div class="text-gray-400">2</div>
+                  <div class="text-gray-400">ZD4501-H25</div>
+                  <div class="text-gray-400">Quia dolor sit amet, consect…</div>
+                  <div class="text-gray-400">Honda </div>
+                  <div class="text-gray-400">F-56</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-golden py-2 w-fit px-4 text-white rounded-lg">
+                      <a href="#">Back Ordered</a>
+                  </button>
+                  <div class="text-white font-bold">Starter drive</div>
+                  <div class="text-gray-400">2</div>
+                  <div class="text-gray-400">A-123-456-789</div>
+                  <div class="text-gray-400">Luia non numi</div>
+                  <div class="text-gray-400">Honda </div>
+                  <div class="text-gray-400">1JBZ12234</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-golden py-2 w-fit px-4 text-white  rounded-lg">
+                      <a href="#">Back Ordered</a>
+                  </button>
+                  <div class="text-white font-bold">Spark plug</div>
+                  <div class="text-gray-400">4</div>
+                  <div class="text-gray-400">ZD4501-H25</div>
+                  <div class="text-gray-400">Neque porro quisquam est…</div>
+                  <div class="text-gray-400">AC Delco</div>
+                  <div class="text-gray-400">F-56</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                </div>
+                </div>
+                <!-- div2 -->
+                <div class="flex mx-64 space-x-4 p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                    <p class="text-gray-400">Porro quisquam est, ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+                </div>
+                <!-- borders -->
+              </div>
+              <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+            </div>
+
+            <!-- 7 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-sabaz py-2 w-fit px-7 text-white rounded-lg">
+                      <a href="#">Purchased</a>
+                  </button>
+                  <div class="text-white font-bold">Alternator</div>
+                  <div class="text-gray-400">1</div>
+                  <div class="text-gray-400">A-123-456-789</div>
+                  <div class="text-gray-400">Sed quia non num</div>
+                  <div class="text-gray-400">DB Electrical </div>
+                  <div class="text-gray-400">1JBZ12234</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+                <!-- borders -->
+            <div class="container mx-auto border border-b-gray-500 mt-2"></div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="container-fluid w-full  p-box-bg mx-auto ">
+              <div class="container mx-auto pt-2  ">
+                  <!-- div1 -->
+                <div class="grid grid-row-1 grid-cols-8 justify-center items-center ">
+                 <button class="p-box-laal py-2 w-fit px-12 text-white rounded-lg">
+                      <a href="#">IOU</a>
+                  </button>
+                  <div class="text-white font-bold">Door trim</div>
+                  <div class="text-gray-400">1</div>
+                  <div class="text-gray-400">ZD4501-H25</div>
+                  <div class="text-gray-400">Quia dolor sit amet, consect…</div>
+                  <div class="text-gray-400">Honda </div>
+                  <div class="text-gray-400">F-56</div>
+                  <!-- div -->
+                <div class="flex space-x-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    
+                </div>
+                </div>
+            
+            </div>
+                  <!--  -->
+                  </div>
+                </div>
+             
+
+              <div class="container-fluid w-full p-box-bg mx-auto ">
+                <!-- border -->
+              <div class="container border-b-2 mx-auto mt-2 border-gray-400 mb-2"></div>
+                <div class="container mx-auto pt-2  ">
+              <div class="flex justify-between  container mx-auto  text-white ">
+                <div class="flex capitalize gap-4">
+                  <a href="https://www.youtube.com/">support</a>
+                  <a href="#">About us</a>
+                  <a href="#">contact us</a>
+                </div>
+                <div class="text-white">
+                  <a href="#">© 2022 Touch Point Pro</a>
+                </div>
+              </div>
+                </div></div>
+                
+                  </div>
+                
+          
+              <!-- 1-end -->
+    
+
+
+
+
+   
+
+</body>
+</html>

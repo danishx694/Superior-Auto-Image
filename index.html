@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+    <title> Dashboard-1 </title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div
+      class="container-fluid bg-black border-b border-gray-700 drop-shadow-2xl"
+    >
+      <div class="container bg-black flex items-center p-3 mx-auto">
+        <img
+          src="/images/Superior-Auto-Image-logo-new@2x.png"
+          class="h-5 mt-4 mb-4"
+          alt=""
+        />
+        <div class="flex ml-auto space-x-10">
+          <a href="/index.html">
+            <img
+              src="/images/Path 34.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/calender.html">
+            <img
+              src="/images/Path 33.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/parts.html">
+            <img
+              src="/images/Path 36.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+          <a href="/reports.html">
+            <img
+              src="/images/Path 35.png"
+              class="hover:border-b-4 border-blue-900"
+              alt=""
+            />
+          </a>
+        </div>
+        <!-- buttons -->
+<!--         
+        <div class="flex  items-center space-x-4"> -->
+
+         <!-- Modal toggle 1 -->
+         
+<!-- Modal toggle -->
+<button data-modal-target="defaultModal" data-modal-toggle="defaultModal"  class="block  text-white ml-6 bg-transparent border border-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center" type="button
+" >
+  <div class="flex item-center  justify-center space-x-2 ">
+    <img src="/images/Path 37.png" class="w-fit h-fit"  alt="" />
+     <div  class="pt-1">Send Estimator</div>
+      </div>
+  
+</button>
+
+          <!-- Modal toggle 2 -->
+          <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"  class="block  text-white ml-6 bg-transparent border border-gray-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center" type="button
+          " >
+            <div class="flex item-center  justify-center space-x-2 ">
+              <img src="/images/Path 4.png" class="w-fit h-fit"  alt="" />
+               <div>Send Estimator</div>
+                </div>
+            
+          </button>
+        <!-- button end -->
+
+        <div class="flex ml-10 space-x-10">
+          <a href="/timeline.html">
+            <img src="/images/Path 6.png" alt="" />
+          </a>
+          <a href="/customer-record.html">
+            <img src="/images/Path 2.png" alt="" />
+          </a>
+          <a href="/setting.html">
+            <img src="/images/Path 3.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- dashboard bar -->
+    <div class="container-fluid bg-gradient-to-t from-gray-500 to-black">
+      <div
+        class="container bg-black flex items-center p-3 mx-auto bg-gradient-to-t from-gray-500 to-black"
+      >
+        <div class="container mx-auto">
+          <div class="flex ml-4">
+            <a href="#">
+              <img
+                src="/images-s/dashboard-bar-1/Path 34.png"
+                class=""
+                alt=""
+              />
+            </a>
+            <h1 class="mx-3 text-white font-bold text-xl">Dashboard</h1>
+          </div>
+
+          <div class="flex">
+            <div class="flex">
+              <h2 class="mx-3 text-white text-xl font-bold mt-2">Show:</h2>
+              <!-- CHECK1 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">All</h2>
+              </div>
+              <!-- CHECK2 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Warning</h2>
+              </div>
+              <!-- CHECK3 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Overdue</h2>
+              </div>
+              <!-- CHECK4 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Dead</h2>
+              </div>
+              <!-- CHECK5 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Archived</h2>
+              </div>
+
+              <!-- news first -->
+            </div>
+
+            <div class="flex mx-20 justify-center items-center ">
+              <button
+                id="dropdownDelayButton"
+                data-dropdown-toggle="dropdownDelay"
+                data-dropdown-delay="500"
+                data-dropdown-trigger="hover"
+                class="text-white font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-cente"
+                type="button"
+              >
+                Sort : Newest First
+                <svg
+                  class="w-4 h-4 ml-2"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownDelay"
+                class="z-10  hidden bg-white divide-y divide-gray-100 rounded-lg  shadow w-44 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownDelayButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-black flex items-center justify-between space-x-10 mr-20 p-3 rounded-lg"
+        >
+          <div>
+            <h1 class="text-white text-xl text-center">Potential</h1>
+            <p class="lining-nums text-center text-gray-400 hover:scale-150">
+              $12345
+            </p>
+          </div>
+
+          <div>
+            <h1 class="text-white text-xl text-center">won</h1>
+            <p class="lining-nums text-green-700 text-center hover:scale-150">
+              $12345
+            </p>
+          </div>
+
+          <div>
+            <h1 class="text-white text-xl text-center">Potential</h1>
+            <p class="lining-nums text-red-700 text-center hover:scale-150">
+              $12345
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- David Luis Hernandez data -->
+    <section id="David">
+      <div class="container-fluid h-full bg-gray-800">
+        <div class="container mx-auto">
+          <div class="text-white absolute mt-10">
+            <h1 class="text-white font-bold text-xl">David Luis Hernandez</h1>
+            <!-- left -->
+            <div class="flex space-x-4 mt-2">
+              <h1 class="text-xl opacity-50">Customer</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-8 h-8 opacity-50"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+                <text x="12" y="14" font-size="11" text-anchor="middle">1</text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="bi bi-reply fill-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+                />
+              </svg>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- right data -->
+        <div class="container mx-auto">
+          <div class="flex justify-end items-center gap-10">
+            <div class="mt-20 text-white text-lg opacity-50">
+              2006 Honda Element
+            </div>
+            <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+            <div class="mt-20 flex items-center space-x-2">
+              <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+              <div
+                class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-red-500 border-red-400"
+              >
+                <p class="font-bold text-center">1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- data odf all the cars  -->
+        <div  class="flex items-center  mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+              In
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+              Contacted
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Sent
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Viewed
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+              Booked
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Received
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+              Estimate
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+              Progress
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Delivered
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+              Up
+              </span>   
+          </div>
+          
+        </div>
+        <!-- 2nd data -->
+        <div class="container mx-auto">
+          <div class="flex space-x-4 mt-4">
+            <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="w-8 h-8 opacity-50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+              <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              class="bi bi-reply fill-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- 2nd dd -->
+        <div  class="flex items-center mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+              Write
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+              Payment
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+              Paid
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Request
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-golden ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Scheduled
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Here
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Received
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Payment
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+              Supplement
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+              Payment
+              </span>   
+          </div>
+          
+        </div>
+        <!-- border  -->
+        <div class="container mx-auto border border-b-gray-500 mt-10"></div>
+
+        <!-- ------------------------------------------------------------------------------------------- -->
+        <div class="container mx-auto">
+          <div class="text-white  absolute mt-10">
+            <h1 class="text-white font-bold text-xl">Tina B.</h1>
+            <!-- left -->
+            <div class="flex  space-x-4 mt-2">
+              <h1 class="text-xl opacity-50">Customer</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="red"
+                class="w-8 h-8 opacity-50"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+                <text x="12" y="14"  font-size="11" text-anchor="middle">2</text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="bi bi-reply fill-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+                />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- right -->
+        <div class="container mx-auto">
+          <div class="flex justify-end items-center gap-10">
+            <div class="mt-20 text-white text-lg opacity-50">
+              2006 Honda Element
+            </div>
+            <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+            <div class="mt-20 flex items-center space-x-2">
+              <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+              <div
+                class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-green-500 border-green-400"
+              >
+                <p class="font-bold text-center">1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2-2nd data -->
+        <div  class="flex items-center mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+              In
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+              Contacted
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Sent
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Viewed
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-golden ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+              Booked
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Received
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+              Estimate
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+              Progress
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Delivered
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+              Up
+              </span>   
+          </div>
+          
+        </div>
+        <!-- 2nd data -->
+        <div class="container mx-auto">
+          <div class="flex space-x-4 mt-4">
+            <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="w-8 h-8 opacity-50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+              <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              class="bi bi-reply fill-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- 2nd dd -->
+        <div  class="flex items-center mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+              Write
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+              Payment
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+              Paid
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Request
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Scheduled
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Here
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Received
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Payment
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+              Supplement
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+              Payment
+              </span>   
+          </div>
+          
+        </div>
+        <div class="container mx-auto border border-b-gray-500 mt-10"></div>
+
+        <!-- 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+
+        <div class="container mx-auto">
+          <div class="text-white  absolute mt-10">
+            <h1 class="text-white font-bold text-xl">Reed Montgomery Fitzgerald</h1>
+            <!-- left -->
+            <div class="flex  space-x-4 mt-2">
+              <h1 class="text-xl opacity-50">Customer</h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="red"
+                class="w-8 h-8 opacity-50"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+                />
+                <text x="12" y="14"  font-size="11" text-anchor="middle">8
+
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                class="bi bi-reply fill-white"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+                />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <!-- right -->
+        <div class="container mx-auto">
+          <div class="flex justify-end items-center gap-10">
+            <div class="mt-20 text-white text-lg opacity-50">
+              2006 Honda Element
+            </div>
+            <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+            <div class="mt-20 flex items-center space-x-2">
+              <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+              <div
+                class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-gray-500 border-gray-400"
+              >
+                <p class="font-bold text-center">-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2-2nd data -->
+        <div  class="flex items-center mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+              In
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-sabaz ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+              Contacted
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-laal ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Sent
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+              Viewed
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+              Booked
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Received
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+              Estimate
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+              Progress
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+              Delivered
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+              Up
+              </span>   
+          </div>
+          
+        </div>
+        <!-- 2nd data -->
+        <div class="container mx-auto">
+          <div class="flex space-x-4 mt-4">
+            <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="w-8 h-8 opacity-50"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+              <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              class="bi bi-reply fill-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- 2nd dd -->
+        <div  class="flex items-center mx-20 mt-2 ">
+          <!-- 1 -->
+          <div class="btn-start p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+              Write
+              </span>   
+          </div>
+          <!-- 2 -->
+          <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+              Payment
+              </span>   
+          </div>
+          <!-- 3 -->
+          <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+              Paid
+              </span>   
+          </div>
+           <!-- 4 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Request
+              </span>   
+          </div>
+           <!-- 5 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Scheduled
+              </span>   
+          </div>
+           <!-- 6 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+              Here
+              </span>   
+          </div>
+           <!-- 7 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Received
+              </span>   
+          </div>
+           <!-- 8 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+              Payment
+              </span>   
+          </div>
+           <!-- 9 -->
+           <div class="clip-path p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+              Supplement
+              </span>   
+          </div>
+           <!-- 10 -->
+           <div class="btn-end p-box-black ">
+            <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+              Payment
+              </span>   
+          </div>
+          
+        </div>
+        <div class="container mx-auto border border-b-gray-500 mt-10"></div>
+<!-- 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+<div class="container mx-auto">
+  <div class="text-white  absolute mt-10">
+    <h1 class="text-white font-bold text-xl">Jonathan Quincy</h1>
+    <!-- left -->
+    <div class="flex  space-x-4 mt-2">
+      <h1 class="text-xl opacity-50">Customer</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="red"
+        class="w-8 h-8 opacity-50"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+        />
+        <text x="12" y="14"  font-size="11" text-anchor="middle">23
+
+        </text>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        class="bi bi-reply fill-white"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+        />
+      </svg>
+    </div>
+
+  </div>
+</div>
+<!-- right -->
+<div class="container mx-auto">
+  <div class="flex justify-end items-center gap-10">
+    <div class="mt-20 text-white text-lg opacity-50">
+      2006 Honda Element
+    </div>
+    <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+    <div class="mt-20 flex items-center space-x-2">
+      <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+      <div
+        class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-yellow-500 border-yellow-400"
+      >
+        <p class="font-bold text-center">1</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2-2nd data -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+      In
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+      Contacted
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Sent
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Viewed
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+      Booked
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Received
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-golden ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+      Estimate
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+      Progress
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Delivered
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+      Up
+      </span>   
+  </div>
+  
+</div>
+<!-- 2nd data -->
+<div class="container mx-auto">
+  <div class="flex space-x-4 mt-4">
+    <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="white"
+      class="w-8 h-8 opacity-50"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+      />
+      <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      class="bi bi-reply fill-white"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+      />
+    </svg>
+  </div>
+</div>
+<!-- 2nd dd -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+      Write
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-sabaz">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+      Payment
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+      Paid
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Request
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Scheduled
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Here
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Received
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Payment
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+      Supplement
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+      Payment
+      </span>   
+  </div>
+  
+</div>
+<div class="container mx-auto border border-b-gray-500 mt-10"></div>
+
+
+<!-- 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+<div class="container mx-auto">
+  <div class="text-white  absolute mt-10">
+    <h1 class="text-white font-bold text-xl">Jacob McCullough</h1>
+    <!-- left -->
+    <div class="flex  space-x-4 mt-2">
+      <h1 class="text-xl opacity-50">Customer</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="red"
+        class="w-8 h-8 opacity-50"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+        />
+        <text x="12" y="14"  font-size="11" text-anchor="middle">23
+
+        </text>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        class="bi bi-reply fill-white"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+        />
+      </svg>
+    </div>
+
+  </div>
+</div>
+<!-- right -->
+<div class="container mx-auto">
+  <div class="flex justify-end items-center gap-10">
+    <div class="mt-20 text-white text-lg opacity-50">
+      2006 Honda Element
+    </div>
+    <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+    <div class="mt-20 flex items-center space-x-2">
+      <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+      <div
+        class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-gray-500 border-gray-400"
+      >
+        <p class="font-bold text-center">-</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2-2nd data -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+      In
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+      Contacted
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Sent
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Viewed
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-purple ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+      Booked
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Received
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+      Estimate
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+      Progress
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Delivered
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+      Up
+      </span>   
+  </div>
+  
+</div>
+<!-- 2nd data -->
+<div class="container mx-auto">
+  <div class="flex space-x-4 mt-4">
+    <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="white"
+      class="w-8 h-8 opacity-50"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+      />
+      <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      class="bi bi-reply fill-white"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+      />
+    </svg>
+  </div>
+</div>
+<!-- 2nd dd -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+      Write
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-purple">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+      Payment
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+      Paid
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Request
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Scheduled
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Here
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Received
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Payment
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+      Supplement
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-black ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+      Payment
+      </span>   
+  </div>
+  
+</div>
+<div class="container mx-auto border border-b-gray-500 mt-10"></div>
+
+<!-- 44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 -->
+
+<div class="container mx-auto">
+  <div class="text-white  absolute mt-10">
+    <h1 class="text-white font-bold text-xl">Justin Orlando Hamilton</h1>
+    <!-- left -->
+    <div class="flex  space-x-4 mt-2">
+      <h1 class="text-xl opacity-50">Customer</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="red"
+        class="w-8 h-8 opacity-50"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+        />
+        <text x="12" y="14"  font-size="11" text-anchor="middle">23
+
+        </text>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        class="bi bi-reply fill-white"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+        />
+      </svg>
+    </div>
+
+  </div>
+</div>
+<!-- right -->
+<div class="container mx-auto">
+  <div class="flex justify-end items-center gap-10">
+    <div class="mt-20 text-white text-lg opacity-50">
+      2006 Honda Element
+    </div>
+    <div class="mt-20 text-white text-lg opacity-50">07/20/22</div>
+    <div class="mt-20 flex items-center space-x-2">
+      <h1 class="text-white text-lg opacity-50">Rental days left</h1>
+      <div
+        class="flex items-center justify-center box-border h-6 w-8 p-2 border-2 rounded-md bg-gray-500 border-gray-400"
+      >
+        <p class="font-bold text-center">-</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 2-2nd data -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Lead <br>
+      In
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Customer <br>
+      Contacted
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Sent
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Estimate  <br>
+      Viewed
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Drop-off  <br>
+      Booked
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-sabaz">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Received
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final  <br>
+      Estimate
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Repair in  <br>
+      Progress
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Car  <br>
+      Delivered
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-sabaz">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Follow  <br>
+      Up
+      </span>   
+  </div>
+  
+</div>
+<!-- 2nd data -->
+<div class="container mx-auto">
+  <div class="flex space-x-4 mt-4">
+    <h1 class="text-xl opacity-50 text-white ">Adjuster</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="white"
+      class="w-8 h-8 opacity-50"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+      />
+      <text x="12" y="14" font-size="11" text-anchor="middle">6</text>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      class="bi bi-reply fill-white"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+      />
+    </svg>
+  </div>
+</div>
+<!-- 2nd dd -->
+<div  class="flex items-center mx-20 mt-2 ">
+  <!-- 1 -->
+  <div class="btn-start p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First  <br>
+      Write
+      </span>   
+  </div>
+  <!-- 2 -->
+  <div class="clip-path p-box-sabaz">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">First Write <br>
+      Payment
+      </span>   
+  </div>
+  <!-- 3 -->
+  <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Deductible <br>
+      Paid
+      </span>   
+  </div>
+   <!-- 4 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Request
+      </span>   
+  </div>
+   <!-- 5 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Scheduled
+      </span>   
+  </div>
+   <!-- 6 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Appraiser <br>
+      Here
+      </span>   
+  </div>
+   <!-- 7 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Received
+      </span>   
+  </div>
+   <!-- 8 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Supplement <br>
+      Payment
+      </span>   
+  </div>
+   <!-- 9 -->
+   <div class="clip-path p-box-sabaz ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final <br>
+      Supplement
+      </span>   
+  </div>
+   <!-- 10 -->
+   <div class="btn-end p-box-golden ">
+    <span class="flex justify-center items-center text-white font-light h-full text-center ">Final Supp. <br>
+      Payment
+      </span>   
+  </div>
+  
+</div>
+<div class="container mx-auto border border-b-gray-500 mt-10"></div>
+
+
+
+<div id="defaultModal" tabindex="-1" aria-hidden="true" class =" fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+    <div class="relative  w-fit h-full max-w-2xl">
+        <!-- Modal content -->
+        <div class="relative bg-gray-900   rounded-lg shadow">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 mt-20 border-b rounded-t ">
+              <div class="space-x-2 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              
+                <h3 class="text-xl text-white font-semibold">
+                    Terms of Service
+                </h3></div>
+                <div>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center " data-modal-hide="defaultModal">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                </div>
+            </div>
+            <!-- Modal body -->
+            <div class="flex items-center  gap-2">
+               <!-- CHECK1 -->
+               <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Walk In</h2>
+              </div>
+              <!-- CHECK2 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Call In</h2>
+                
+              </div>
+              <!-- CHECK4 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Tow In</h2>
+              </div>
+
+              <!-- CHECK3 -->
+              <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Another Shop</h2>
+              </div>
+                </div>
+
+                <!-- body2 -->
+                <div class="grid grid-rows-3 grid-cols-2 gap-4 px-4 mt-2  ">
+                  <div><input type="date" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3   text-white"></div>
+                  <div><input type="date" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3 text-white"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3 text-center text-white" placeholder="First Name"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Last Name"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Phone"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Email"></div>
+                </div>
+                <!-- body 3  -->
+                <div class="grid grid-rows-1 grid-cols-2 gap-2 mb-12 h-full w-full">
+                  <div class="py-[0.32rem] px-3 ml-2"><h1 class="text-gray-400 capitalize text-lg">come from another shop</h1></div>
+                  <div class="flex items-center">
+                     <!-- CHECK1 -->
+               <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">Yes</h2>
+              </div>
+               <!-- CHECK2 -->
+               <div class="flex mt-2 ml-4">
+                <div class="block">
+                  <div class="mt-1">
+                    <label class="inline-flex items-center">
+                      <input
+                        type="checkbox"
+                        class="w-5 h-5 rounded bg-transparent border-white"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <h2 class="mx-3 text-xl text-gray-300">No</h2>
+              </div>
+                  </div>
+                </div>
+
+                <!-- body4 -->
+                <div class="gap-4 px-4"><input type="text" class="bg-transparent    w-full rounded-lg border-2 py-[0.32rem]  text-start px-2 text-white" placeholder="shop Name"></div>
+
+                <!-- body 5 -->
+                <div class="grid grid-rows-1 grid-cols-3 gap-4 px-4 mt-4  ">
+                  <div><input type="text" class="bg-transparent   w-full rounded-lg  border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Last Name"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded-lg  border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Phone"></div>
+                  <div><input type="text" class="bg-transparent   w-full rounded-lg  border-2 py-[0.32rem] px-3 text-center text-white" placeholder="Email"></div>
+                </div>
+
+                <!-- body6 -->
+                <div class="gap-4 px-4"><input type="text" class="bg-transparent    w-full rounded-lg border-2 py-[0.32rem] mt-4 text-start p-2 text-white" placeholder="Vin"></div>
+
+                <!-- body7 -->
+                <div class="gap-4 px-4"><input type="text" class="bg-transparent    w-full rounded-lg border-2 py-[0.32rem] mt-4 text-start p-2 text-white" placeholder="Claim/Tracking Number"></div>
+
+                <!-- body8 -->
+                <div class="gap-4 px-4"><input type="text" class="bg-transparent    w-full rounded-lg border-2  mt-4 text-start py-24 p-2 text-white" placeholder="Notes"></div>
+                <!-- button -->
+                <div class="flex justify-end container ">
+                  <button class=" flex justify-end w-fit p-box-blue px-10 my-2 py-4 mr-4 rounded-xl">Add</button>
+                  </div>
+              </div>
+            </div>
+      </div>
+
+           
+      
+      <div class="flex justify-between  container mx-auto mt-2 p-4  text-white ">
+        <div class="flex capitalize gap-4">
+          <a href="https://www.youtube.com/">support</a>
+          <a href="#">About us</a>
+          <a href="#">contact us</a>
+        </div>
+        <div class="text-white">
+          <a href="#">© 2022 Touch Point Pro</a>
+        </div>
+      </div>
+        </div>
+  
+
+
+
+
+
+
+
+
+      </div> 
+    </section>
+   
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  </body>
+</html>
